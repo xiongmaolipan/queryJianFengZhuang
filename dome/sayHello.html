@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+//			$(function() {
+//              //理解$.extend();
+//				 $.extend({
+//				 	sayHello:function(name){
+//				 		console.log(name?name:'hello');	
+//				 	}
+//				 });
+//				 $.sayHello();
+//				 $.sayHello('zhangsan');
+//			});
+			$(function() {
+				//理解$.fn.extend();
+				$.fn.extend({
+					sayHello: function(name) {
+						console.log(name ? name:'hello');
+					}
+				})
+				$('div').sayHello();
+			});
+		</script>
+	</head>
+	<body>
+		<div></div>
+	</body>
+
+</html>
